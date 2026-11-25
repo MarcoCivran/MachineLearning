@@ -11,3 +11,66 @@ ENV/
 # IDE files
 .vscode/
 .idea/
+
+# --- Build output ---
+target/
+build/
+out/
+bin/
+*.class
+*.jar
+*.war
+!gradle/wrapper/gradle-wrapper.jar
+!.mvn/wrapper/maven-wrapper.jar
+
+# --- Gradle / Maven ---
+.gradle/
+.mvn/timing.properties
+dependency-reduced-pom.xml
+
+# --- IDE ---
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+nbproject/
+.DS_Store
+
+# --- Logs ---
+*.log
+logs/
+
+# --- ML: datasets ---
+data/
+datasets/
+*.csv
+*.tsv
+*.arff
+*.parquet
+*.h5
+*.hdf5
+
+# --- ML: modelli e checkpoint ---
+models/
+checkpoints/
+*.model
+*.pb
+*.onnx
+*.pt
+*.pth
+*.ser
+*.bin
+
+# --- ML: output di esperimenti ---
+runs/
+experiments/
+results/
+tmp/
+*.tmp
+
+# --- Segreti / config locali ---
+.env
+*.properties.local
+application-local.*
